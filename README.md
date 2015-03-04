@@ -68,3 +68,15 @@ When `git hooks` is run without arguments, it lists all hooks installed on your 
 
 Check out the hooks in `contrib/` for some examples.
 
+
+Custom hooks directories
+========================
+
+By default project hooks directory is `<project dir>/git_hooks/`.
+To set custom directory create `githooks.json` file in your project root dir and set `project_dir` parameter:
+
+```
+{
+	"project_dir": "contrib"
+}
+```
